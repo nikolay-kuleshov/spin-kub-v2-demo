@@ -25,11 +25,13 @@ spec:
     matchLabels:
       source: demo
       app: spinnaker
+      test_label: test 
   template:
     metadata:
       labels:
         source: demo
         app: spinnaker
+        test_label: test 
     spec:
       containers:
       - name: primary
@@ -55,6 +57,7 @@ spec:
   selector:
     source: demo
     app: spinnaker
+    test_label: test 
   ports:
   - protocol: TCP
     port: 80

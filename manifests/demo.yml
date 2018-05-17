@@ -18,6 +18,7 @@ metadata:
     source: demo
     stack: frontend
     app: spinnaker
+    test_label: test 
 spec:
   replicas: 3
   selector:

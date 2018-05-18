@@ -10,7 +10,7 @@ metadata:
   name: spinnaker-demo-config
   namespace: '${ namespace }'
 data:
-  NEW_FEATURE: "false"
+  NEW_FEATURE: "true"
 
 
 ---

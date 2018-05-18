@@ -66,7 +66,3 @@ spec:
     targetPort: 8000
     name: test1
     
-  - protocol: TCP
-    port: 90
-    targetPort: 9000
-    name: test2

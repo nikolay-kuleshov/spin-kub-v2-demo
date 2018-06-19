@@ -12,6 +12,14 @@ metadata:
 data:
   NEW_FEATURE: "true"
 
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: spinnaker-demo-config2
+  namespace: '${ namespace }'
+data:
+  NEW_FEATURE: "true"
+
 
 ---
 
@@ -48,7 +56,9 @@ spec:
         envFrom:
         - configMapRef:
             name: spinnaker-demo-config
-
+        - configMapRef:
+            name: spinnaker-demo-config2
+        
 ---
 
 kind: Service

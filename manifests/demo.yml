@@ -38,7 +38,7 @@ spec:
     spec:
       containers:
       - name: primary
-        image: devhub-docker.cisco.com/iot-dockersandbox/mkulisho/k8s-hello-world-test-pipeline
+        image: index.docker.io/nkuleshov/spin-kub-v2-demo
         ports:
         - containerPort: 8000
         readinessProbe:
